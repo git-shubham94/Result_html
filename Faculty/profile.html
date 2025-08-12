@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faculty Profile</title>
+    <link rel="stylesheet" href="Faculty Style/faculty.css">
 </head>
 <body>
-    <center><h1>Faculty Profile</h1>
+    <div class="faculty-card">
+    <center><h1 class="faculty-heading">Faculty Profile</h1>
     <table>
         <tr>
-            <td><img src="Faculty Media/faculty.png" height="100" width="100"="Faculty Image"></td>
-                <td>This is your faculty space.<br>View courses and manage student results.</td>
+            <td><img src="Faculty Media/faculty.png" class="faculty-img" height="100" width="100"="Faculty Image"></td></tr>
+            <tr>   
+            <td>This is your faculty space.<br>View courses and manage student results.</td>
         </tr>
-    </table></center>
-    <center><table>
-        <tr>
-            <td>
-                <ol>
+    </table>
+   
+                <ul class="list-style">
                     <li>
                         <u>My courses</u>
                     </li>
@@ -26,13 +27,10 @@
                     <li>
                         <u>Update Results</u>
                     </li>
-                </ol>
-            </td>
-        </tr>
-    </table></center>
-    <hr>
-    <center><h1>Faculty Details</h1>
-    <table border="1">
+                </ul>
+
+    <h1 class="faculty-heading">Faculty Details</h1>
+    <table>
         <tr>
             <td>
                 Name
@@ -49,8 +47,10 @@
             <td>Department</td>
             <td>Computer Science</td>
         </tr>
+        </table>
     </table>
     </center>
+    </div>
     
 </body>
 </html>

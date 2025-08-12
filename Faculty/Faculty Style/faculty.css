@@ -1,0 +1,74 @@
+body{
+    margin:;
+    padding: 30px;
+    background:linear-gradient(to left,#812f36,rgba(50, 40, 26, 0)) ;
+}
+.faculty-heading{
+    text-align:center;
+    align-items: center;
+    font-size: 45px;
+    color: aquamarine;
+
+}
+.faculty-img{
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #3B38A0;
+    border-radius: 16       px;
+    box-shadow: 0px 5px 5px rgb(0, 0, 0.5);
+}
+.faculty-card{
+    display: flex;
+    background: #00809D;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid #00809D;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0px 5px 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease ;
+
+}
+.faculty-card:hover{
+    border:2px solid #ff6f3c;
+    background:radial-gradient(#00809D,#ff6f3c);
+    transform:scale(1.02);
+    overscroll-behavior-x: 0px 12px 32px rgb(0,0,1.5);
+}
+.list-style{
+    list-style:none;
+    display:flex;
+    gap:30px; 
+    padding:0;
+       
+}
+.list-style li{
+        background-color: #3B38A0;
+        color: #ff6f3c;
+        padding: 5px 6px 5px 6px;
+        box-shadow: 0px 12px 30px rgb(0.1, 0.2, 1.5);
+        position:relative;
+        border-radius: 20px;
+        transition: transform 0.3s ease, box-shadow 0.2s ease;
+    }
+.list-style li::before{
+        content: '✓';
+        position:relative;
+              transform: translateY(-50%);
+        left:auto;
+        height:0px;
+        width:0px;
+        color: black;
+        background-color: antiquewhite;
+                                 
+    }
+.list-style li:hover{
+  transform: scale(1.2);
+  box-shadow: 0px 15px 12px;
+}
